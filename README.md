@@ -1,3 +1,13 @@
+CHANGELOG
+=========
+mysql-server的连接长时间空闲后会断开连接(默认8小时)，此时mysql-otp会打出各种error log,这些错误日志我们并不需要，所以在这里稍作修改，把它去掉了。我们是直接使用的mysql_poolboy项目(该项目也需要稍作修改去掉重连的错误日志)
+
+
+---
+原项目地址：https://github.com/mysql-otp/mysql-otp-poolboy
+
+---
+
 MySQL/OTP + Poolboy
 ===================
 
